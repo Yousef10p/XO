@@ -1,0 +1,71 @@
+
+body{
+    background-color: gray;
+}
+
+#btnGame{
+    background-color: green;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    border-radius: 15%;
+}
+
+#h1button{
+    color: white;
+}
+
+
+.grid-container {
+    display: none;
+    width: 900px;
+    height: 300px;
+    margin: 8% auto auto auto;
+    grid-template-columns: auto auto auto;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+    /* border: red solid; */
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  #zz,#zo,#zt{
+    border-top: 0px;
+  }
+
+  #tz, #to, #tt{
+    border-bottom: 0px;
+  }
+
+  #zz, #oz, #tz{
+    border-left: 0px;
+  }
+
+  #zt, #ot, #tt{
+    border-right: 0px;
+  }
+
+  .blocks{
+    /* border: red solid; */
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+  }
+
+  #turn{
+    text-align: center;
+    margin-top: 100px;
+    display: none;
+    
+  }
