@@ -1,9 +1,30 @@
 
 body{
-    background-color: gray;
+    background-color: white;
+}
+
+.nav{
+
+  background-color: black;
+  height: 120px;
+  width: 100.82%;
+  position: relative;
+  right: 8px;
+  bottom: 25px;
+}
+
+#h1innav{
+  position: fixed;
+  color: white;
+  text-align: center;
+  right: 46.5%;
+  top: 0.25%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #btnGame{
+    position: relative;
+    top: 80px;
     background-color: green;
     display: block;
     margin-left: auto;
@@ -61,6 +82,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: 60px;
+    background-color: inherit;
   }
 
   #turn{
