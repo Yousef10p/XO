@@ -3,7 +3,7 @@ function starter() {
     let temp = document.getElementsByClassName("grid-container");
     let turnh1 = document.getElementById("turn")
     if (storedWord.innerHTML == 'Start Game') {
-        temp[0].style.display = 'grid';
+        temp[0].style.display = 'flex';
         storedWord.innerHTML = 'End Game';
     }
     else if (storedWord.innerHTML == 'End Game') {
@@ -34,7 +34,7 @@ function clear() {
         }
     }
 
-    let x = document.getElementsByClassName('blocks');
+    let x = document.getElementsByClassName('flex_item');
     for (let i of x) {
         i.style.backgroundImage = 'url("")'
     }

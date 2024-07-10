@@ -15,11 +15,11 @@
          
            
         <!-- <button id="btnGame" onclick="starter()"><h1 id="h1button">Start Game</h1></button> -->
-         <div class="d-flex flex-row justify-content-center pt-5 mt-5 mb-5 pb-5">
+         <div class="d-flex flex-row justify-content-center pt-5 mt-5 mb-1 pb-1">
                 <button id="btnGame" onclick="starter()" type="button" class="btn btn-primary"><h1 id="h1button">Start Game</h1></button>
         </div>      
 
-        <div class="grid-container" >
+        <!-- <div class="grid-container" >
             <div  class="grid-item"><div id="b00" onclick="setValue('b00')" class="blocks"></div></div>
             <div  class="grid-item"><div id="b01" onclick="setValue('b01')" class="blocks"></div></div>
             <div  class="grid-item"><div id="b02" onclick="setValue('b02')" class="blocks"></div></div>  
@@ -29,7 +29,21 @@
             <div  class="grid-item"><div id="b20" onclick="setValue('b20')" class="blocks"></div></div>
             <div  class="grid-item"><div id="b21" onclick="setValue('b21')" class="blocks"></div></div>
             <div  class="grid-item"><div id="b22" onclick="setValue('b22')" class="blocks"></div></div>  
-        </div>
+        </div> -->
+
+        <div class="grid-container">
+            <div id="b00" onclick="setValue('b00')" class="flex_item" style="border-top: none;border-left: none;"></div>
+            <div id="b01" onclick="setValue('b01')" class="flex_item" style="border-top: none;"></div>
+            <div id="b02" onclick="setValue('b02')" class="flex_item" style="border-top: none; border-right: none;"></div>
+            <div  class="break"></div>  
+            <div id="b10" onclick="setValue('b10')" class="flex_item" style="border-left: none;"></div>
+            <div id="b11" onclick="setValue('b11')" class="flex_item"></div>
+            <div id="b12" onclick="setValue('b12')" class="flex_item" style="border-right: none;"></div>
+            <div  class="break"></div>  
+            <div id="b20" onclick="setValue('b20')" class="flex_item" style="border-left: none; border-bottom: none;"></div>
+            <div id="b21" onclick="setValue('b21')" class="flex_item" style="border-bottom: none;"></div>
+            <div id="b22" onclick="setValue('b22')" class="flex_item" style="border-bottom: none; border-right: none;"></div>
+          </div>
        
 
         <div class="container-fluid text-center mt-5 pt-5">
