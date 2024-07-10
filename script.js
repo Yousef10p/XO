@@ -63,15 +63,24 @@ function Dequeue() {
 
 function setValue(position) {
     let imageString = null;
-    let position1 = parseInt(position[1],10);
-    let position2 = parseInt(position[2],10);
+    let position1 = parseInt(position[1],10),position1pulled = null;
+    let position2 = parseInt(position[2],10),position2pulled = null;
     if (ValueToBeSet == 0) {
         imageString = 'url("X.png")';
     }
     else {
         imageString = 'url("O.png")';
     }
+    
+    if(pulled != null){
+        position1pulled = parseInt(pulled[1],10);
+        position2pulled = parseInt(pulled[2],10);
+    }
 
+    if(XOarray[position1][position2] != -1 || (position1 == position1pulled && position2 == position2pulled)){
+        alert("Reserved place...");
+        return;
+    }
     XOarray[position1][position2] = ValueToBeSet;
     document.getElementById(position).style.backgroundImage = imageString;
     Enqeue(position);
